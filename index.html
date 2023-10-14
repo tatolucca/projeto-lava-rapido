@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="" href="/style/vapormin.css"> 
+    <link rel="stylesheet" href="/style/style.css">
+    <title>my first form</title>
+
+</head>
+
+<center><body>
+    <div class="campo">
+        <h1 id="titulo"> ola bem vindo ao nosso lava jato </h1>
+        
+        <h3 id="subtitulo">cadastrese aqui para fazer um orçamento
+        </h3>
+        <br>
+    </div>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="inome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="inome" placeholder="Digite seu Nome aqui." required>
+            </div>
+
+            <div class="campo">
+                <label for="isobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu Sobrenome aqui." required>
+            </div>
+
+            <div class="campo">
+                <label for="iemail"><strong>Email</strong></label>
+                <input type="email" name="email" id="iemail" placeholder="Digite seu Email aqui." required>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Numero de Telefone</strong></label>
+                <input type="itel" name="tel" id="itel" placeholder="Exemplo: (xx) x xxxx-xxxx"
+                    pattern="^\(\d{2}\) \d{1} \d{4}-\d{4}$" required>
+              
+            </div>
+
+            <div class="campo">
+                <label for="idate"><strong>Data de Nascimento</strong></label>
+                <input type="date" name="date" id="idate" required>
+            </div>
+
+            <div class="campo">
+                <label for="itime"><strong>Horas que está preenchendo este formulário</strong></label>
+                <input type="time" name="time" id="itime" required>
+            </div>
+        </fieldset>
+        <br>
+        <div class="campo">
+            <label><strong>Quais serviços vo~cÊ busca ?</strong></label>
+            <br>
+            <label for="iradio">
+                <input type="radio" name="devweb" id="iradio" value="frontend">lavagens basicas
+            </label>
+            <label for="iradio">
+                <input type="radio" name="devweb" id="iradio" value="backend">completas
+            </label>
+            <label for="iradio">
+                <input type="radio" name="devweb" id="iradio" value="fullstack">pinturas e serviços com a lataria
+            </label>
+            <label for="iradio">
+                <input type="radio" name="devweb" id="iradio" value="fullstack">outros serviços 
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="Senioridade"><strong>Senioridade</strong></label>
+            <select id="Senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+        <br>
+       
+        </fieldset>
+
+        <div class="campo" >
+            <br>
+            <label for="iexperiencia"><strong>diganos alguma informação extra que procura :</strong></label> 
+            <textarea name="experiencia" id="iexperiencia" rows="6" style="width: 40em"
+                placeholder="Digite oque está achando do curso de (Programação) ..."></textarea>
+        </div>
+
+        <button class="botao1" type="reset">Limpar o fomulário</button>
+
+        <button class="botao2" type="submit">Concluído</button>
+
+    </form>
+</body>
+</center>
+</html>
